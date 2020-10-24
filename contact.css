@@ -1,0 +1,226 @@
+/*リセットcss*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/* 本文 */
+
+/*ヘッダー  */
+.page-header{
+  display:flex;
+  justify-content: space-between;
+  background-color:white;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  
+  opacity: 0.8;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+.header-title{
+  font-size: 20px;
+  font-weight: bold;
+  padding-left:20px;
+  padding-top:15px;
+  letter-spacing: 2px;
+}
+.main-nav{
+  display:flex;
+  padding-right:40px ;
+  padding-top:15px;
+}
+.main-nav li{
+  padding-left:10px;
+}
+.main-nav a{
+  font-size: 20px;
+  font-weight: bold;
+  padding-left:20px;
+  padding-top:15px;
+  letter-spacing: 2px;
+  color:black;
+  text-decoration: none;
+}
+
+/* メインコンテンツ */
+.main-wrapper{
+  padding: 100px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+@media screen and (max-width: 640px){
+  .nav{
+    display:none;
+  }
+  .hamburger-hidden {
+    display: none;
+  }
+  .hamburger-open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .hamburger span,
+  .hamburger span:before,
+  .hamburger span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
+  }
+  .hamburger-open span:before {
+    bottom: 8px;
+  }
+  .hamburger-open span:after {
+    top: 8px;
+  }
+  #hamburger-check:checked ~ .hamburger-open span {
+    background: rgba(255, 255, 255, 0);
+  }
+  #hamburger-check:checked ~ .hamburger-open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  #hamburger-check:checked ~ .hamburger-open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  .hamburger-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 99;
+    background: #fff;
+    transition: .5s;
+    padding-left: 5vw;
+    padding-top: 10vw;
+  }
+  .hamburger-item{
+    padding:5vw;
+  }
+  .hamburger-item-name{
+    color:black;
+    text-decoration: none;
+    font-size: 7vw;
+    letter-spacing: 5px;
+    text-align:left;
+    font-family: 'Teko', sans-serif;
+  } 
+  #hamburger-check:checked ~ .hamburger-content {
+    left: 0;
+  }
+}
+@media screen and (min-width: 640px){
+  .hamburger{
+    display:none;
+  }
+}
