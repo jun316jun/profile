@@ -142,26 +142,18 @@ input, select {
 
 /*ファーストビュー*/
 .top{
-  background-image: url(N879_orenjiironikouyousuru.jpg);
+  background-image: url(mhgRo2SDoTnFnu51603607889_1603607903.jpg);
   height:80vh;
   background-size: cover;
 }
 .top-logo{
-  padding-top:55vh;
+  padding-top:58vh;
   padding-left: 5vw;
   padding-bottom: 15px;
-  font-size: 6vw;
+  font-size: 7vw;
   letter-spacing: 5px;
   text-align:left;
-  font-family: 'Noto Serif JP', sans-serif;
-}
-.top-sub-logo{
-  font-size:1vw;
-  padding-left: 5.7vw;
-  letter-spacing: 4vw;
-  color:#fff;
-  font-family: 'Caveat', cursive;
-  font-weight: bold;
+  font-family: 'Teko', sans-serif;
 }
 
 
@@ -179,7 +171,7 @@ input, select {
   box-shadow: 0 0 10px 0 whitesmoke;
   margin-top:5.2vw;
 }
-/*イラストレーターで作る*/
+
 .top-title{
   padding-top:5% ;
   font-size: 30px;
@@ -282,6 +274,10 @@ input, select {
   padding-top:5%;
   display: flex;
 }
+.work2-web{
+  padding-top:5%;
+  display: flex;
+}
 .work1-top{
 width: 40%;
 }
@@ -322,9 +318,6 @@ width: 40%;
   padding-left: 10vw;
   width: 40%;
 }
-.work{
-  
-}
 .work2-text{
   padding-top: 2%;
   width:40%;
@@ -338,10 +331,11 @@ width: 40%;
 }
 .isara-photo{
   width: 100%;
-  padding-top: 30px;
+  padding-top: 3%;
 }
 .strength-photo{
   width: 100%;
+  padding-top: 3%;
 }
 .contact{
   background-color:white;
@@ -377,8 +371,67 @@ footer{
 }
 
 @media screen and (max-width: 640px){
+  /*ヘッダーの変更  */
   .nav{
     display:none;
+  }
+  /* ファーストビューの変更 */
+  .top{
+    height: 400px;
+  }
+  .top-logo{
+    font-size: 60px;
+  }
+  /* メインコンテンツの変更 */
+  .top-content{
+    width: 90%;
+  }
+  .section p{
+    width: 90%;
+    font-size: 13px;
+  }
+  .top-title{
+    font-size: 20px;
+  }
+  .sub-title{
+    font-size: 18px;
+  }
+  .important{
+    font-size: 13px;
+  }
+  .work{
+    display: flex;
+    flex-direction: column;
+  }
+  .work p{
+    font-size: 13px;
+  }
+  .work1-top{
+    width: 90%;
+  }
+  .isara-photo{
+    width: 85%;
+  }
+  .work1-text{
+    width: 90%;
+    padding-left: 0;
+  }
+  .content3-sub-title{
+    font-size:18px ;
+  }
+  .work2-top{
+    width: 90%;
+    padding-left: 0;
+  }
+  .strength-photo{
+    width: 85%;
+  }
+  .work2-text{
+    width: 90%;
+    padding-left: 0;
+  }
+  .work2-web{
+    display: none;
   }
   .hamburger-hidden {
     display: none;
@@ -452,5 +505,8 @@ footer{
 @media screen and (min-width: 640px){
   .hamburger{
     display:none;
+  }
+  .work2-smart{
+    display: none;
   }
 }
