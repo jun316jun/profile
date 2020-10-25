@@ -376,8 +376,6 @@ footer{
     display:none;
   }
   /* ファーストビューの変更 */
-  .top{
-    height: 400px;
   }
   .top-logo{
     font-size: 60px;
@@ -385,6 +383,18 @@ footer{
   /* メインコンテンツの変更 */
   .top-content{
     width: 90%;
+  }
+  .section2 p{
+    font-size: 13px;
+  }
+  .skill{
+    font-size: 18px;
+  }
+  .skill-text{
+    font-size: 13px;
+  }
+  .hobby{
+    font-size: 18px;
   }
   .section p{
     width: 90%;
@@ -504,7 +514,8 @@ footer{
   #hamburger-check:checked ~ .hamburger-content {
     left: 0;
   }
-}
+
+
 @media screen and (min-width: 640px){
   .hamburger{
     display:none;
