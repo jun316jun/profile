@@ -430,6 +430,9 @@ footer{
     width: 90%;
     padding-left: 0;
   }
+  .work2-text p{
+    font-size: 13px;
+  }
   .work2-web{
     display: none;
   }
