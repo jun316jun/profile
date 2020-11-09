@@ -142,18 +142,23 @@ input, select {
 
 /*ファーストビュー*/
 .top{
-  background-image: url(mhgRo2SDoTnFnu51603607889_1603607903.jpg);
+  background-image: url(AdobeStock_339062577.jpeg);
   height:80vh;
   background-size: cover;
 }
 .top-logo{
-  padding-top:58vh;
-  padding-left: 5vw;
-  padding-bottom: 15px;
-  font-size: 7vw;
+  padding-top:34vh;
+  
+  font-size: 100px;
   letter-spacing: 5px;
-  text-align:left;
+  text-align:center;
   font-family: 'Teko', sans-serif;
+}
+.sub-logo{
+  text-align: center;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  font-weight: bold;
+  color: #fff;
 }
 
 
@@ -189,7 +194,7 @@ input, select {
   background-color: white;
 }
 .main-content-wrapper{
-  background-color:#f8b500;
+  background-color:#C18BC2;
   padding-left: 5vw;
   padding-bottom:10% ;
 }
@@ -265,7 +270,7 @@ input, select {
 }
 
 .main-content3{
-  background-color:#f8b500;
+  background-color:#C18BC2 ;
   padding-left: 5vw;
   padding-bottom: 5%;
 }
@@ -314,6 +319,7 @@ width: 40%;
   font-size: 15px;
   letter-spacing: 0.1rem;
 }
+
 .work2-top{
   padding-left: 10vw;
   width: 40%;
@@ -331,11 +337,17 @@ width: 40%;
 }
 .isara-photo{
   width: 100%;
-  padding-top: 3%;
+  margin-top: 3%;
+}
+.isara-photo:hover{
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
 .strength-photo{
   width: 100%;
-  padding-top: 3%;
+  margin-top: 3%;
+}
+.strength-photo:hover{
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
 .contact{
   background-color:white;
@@ -355,7 +367,8 @@ width: 40%;
   letter-spacing: 2px;
 }
 footer{
-  background-color:#f8b500;
+  background-color:
+  #C2C18B;
 }
 .footer-wrapper{
   text-align: center;
@@ -367,7 +380,8 @@ footer{
   text-decoration:underline
 }
 .work-title{
-  font-weight:lighter;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  color:  #C2C18B;
 }
 
 @media screen and (max-width: 640px){
