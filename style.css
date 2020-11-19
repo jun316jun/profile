@@ -158,7 +158,7 @@ input, select {
   text-align: center;
   font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
   font-weight: bold;
-  color: #fff;
+  color: #ffffff;
 }
 
 
@@ -335,12 +335,23 @@ width: 40%;
   font-size: 15px;
   letter-spacing: 0.1rem;
 }
+.isara-url{
+  text-decoration: none;
+  color: #C2C18B;
+}
+.strength-url{
+  text-decoration: none;
+  color: #C2C18B;
+}
 .isara-photo{
   width: 100%;
   margin-top: 3%;
 }
 .isara-photo:hover{
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+.id-pass{
+  color: white;
 }
 .strength-photo{
   width: 100%;
@@ -576,8 +587,27 @@ footer{
   #hamburger-check:checked ~ .hamburger-content {
     left: 0;
   }
-  .message{
-    
+  form{
+    padding: 50px 0;
+  }
+  form ul{
+    width: auto;
+  }
+  .name-box{
+    width: 130px;
+  }
+  .email-box{
+    width: 130px;
+  }
+  .tel-box{
+    width: 130px;
+  }
+  .message-box{
+    width: 150px;
+    height: 70px;
+  }
+  .button{
+    margin-top: 50px;
   }
 }
 
