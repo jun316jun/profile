@@ -360,6 +360,44 @@ width: 40%;
 .strength-photo:hover{
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
+.firstviews{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.firstviews h1{
+  font-size: 30px;
+  letter-spacing: 5px;
+  width: 90%;
+  color: black;
+  text-align: left;
+  font-family: 'Roboto Condensed', sans-serif;
+  border-bottom: 3px solid black;
+}
+.firstviews-wrapper{
+  padding-top: 50px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.firstview{
+  text-align: center;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+.firstview img:hover{
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+.firstview h2{
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  padding-top: 10px;
+  color: white;
+}
+.first{
+  margin-bottom: 40px;
+}
+.forth{
+  display: none;
+}
 .contact{
   background-color:white;
 }
@@ -609,6 +647,13 @@ footer{
   .button{
     margin-top: 50px;
   }
+  .firstview{
+    margin-bottom: 30px;
+  }
+  .firstview img{
+    width: 420px;
+  }
+
 }
 
 @media screen and (min-width: 640px){
