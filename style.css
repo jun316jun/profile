@@ -115,13 +115,13 @@ input, select {
   font-size: 20px;
   font-weight: bold;
   padding-left:20px;
-  padding-top:15px;
+  padding-top:18px;
   letter-spacing: 2px;
 }
 .main-nav{
   display:flex;
   padding-right:40px ;
-  padding-top:15px;
+  padding-top:18px;
 }
 .main-nav li{
   padding-left:10px;
@@ -211,7 +211,7 @@ input, select {
 }
 .skill{
   color:white;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: lighter;
   letter-spacing: 5px;
   text-align:left;
@@ -230,7 +230,7 @@ input, select {
 }
 .skill-text{
   color:white;
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 5px;
   line-height: 30px;
 }
